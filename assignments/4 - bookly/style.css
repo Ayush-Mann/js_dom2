@@ -62,18 +62,21 @@ h1, h2{
 #book-list li:hover{
     border-color: #e91e63;
 }
-
-.delete{
-    float: right;
-    background: #e91e63;
-    padding: 6px;
+li{ display: flex; 
+    justify-content: space-between;
+}
+.cross{
+    /* float: right; */
+    background: white;
+    padding: 3px 6px;
     border-radius: 4px;
     cursor: pointer;
-    color: white;
+    color: #c90647;
 }
 
-.delete:hover{
+.cross:hover{
     background: #333;
+    color: white;
 }
 
 #add-book{
@@ -142,4 +145,11 @@ h1, h2{
 
 #tabbed-content .panel.active{
     display: block;
+}
+.cross:hover{
+    color:red;
+
+}
+.cross{
+    
 }
