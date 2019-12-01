@@ -5,6 +5,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Forms</title>
+    <style>
+      .wrapper{
+        max-width:768px; 
+        margin: 0px auto;
+      }
+      .pad{
+        margin: 0 auto;
+        padding: 20px;
+      }
+      .inputBox{
+       padding: 10px 10px;
+       border: 1px solid grey;
+      }
+      .button{
+        margin: 0 auto;
+        padding: 10px;
+      }
+    </style>
   </head>
-  <body></body>
+  <body>
+    <div class="wrapper"> 
+      <div class="form_">
+        <form name="myform" style="display: flex; flex-flow:column;">
+          <span class="message" style="display: none; margin:0 auto;"></span>
+          <div class="pad">
+            <input class="inputBox" name="nameEnter" type="text" placeholder="Enter name">
+            
+            <span class="alert alert1"  style="color: red; display: none">Field cannot be empty</span>
+          </div>
+          <div class="pad">
+            <input class="inputBox" name="emailEnter" type="email" placeholder="Enter email">
+            
+            <span class="alert alert2" style="color: red;  display: none">Field cannot be empty</span>
+          </div>
+          <div class="pad">
+            <input class="inputBox" name="passEnter" type="password" placeholder="Enter Password">
+            
+            <span class="alert alert3" style="color: red;  display: none">Field cannot be empty</span>
+          </div>
+          <div class="button">
+            <input  type="submit" name="submitBtn" value="submit">
+          </div>
+        </form>
+
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
 </html>
